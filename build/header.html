@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .submenu {
+            display: none;
+        }
+        .submenu.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header id="header" class="grid grid-cols-4 p-4">
+        <div id="company">
+            <h1 class="font-bold text-2xl">Generation Nepal</h1>
+        </div>
+        <nav class="col-span-2">
+            <ul class="flex font-bold text-xl gap-7">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#" class="toggle-menu">Desktop <b>></b></a>
+                    <ul class="submenu flex flex-col gap-2">
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Peripheral</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="location-search flex justify-around">
+            <button class="font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Location</button>
+            <button class="font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Search</button>
+        </div>
+    </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select all links with the toggle-menu class
+            const toggles = document.querySelectorAll('.toggle-menu');
+            
+            toggles.forEach(toggle => {
+                // Add click event listener to each toggle
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent the default action of the link
+                    
+                    // Find the sibling <ul> and toggle its visibility
+                    const submenu = toggle.nextElementSibling;
+                    if (submenu && submenu.classList.contains('submenu')) {
+                        submenu.classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color">
+    <!-- Header Section -->
+
+    <header id="header" class=" bg-gray-300 p-2 grid grid-cols-2 md:grid md:grid-cols-4">
+        <!-- Company Logo -->
+        <div class="font-semibold text-lg m-1 md:font-semibold md:text-xl lg:font-semibold lg:text-2xl">
+            <h1 class="md:p-1 md:text-center">Generation Nepal</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="hidden md:col-span-2 md:flex">
+            <ul class="md:pt-2 md:flex md:gap-1 md:font-normal md:text-lg lg:font-normal lg:gap-3 lg:text-2xl">
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Home</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Desktop</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Laptop</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Accessories</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Peripheral</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Blog</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Button for location and search -->
+        <div class="hidden md-max-w-xs  md:flex md:items-center lg:justify-start md:mx-6">
+            <button class="md:font-normal md:mr-2 md:ml-2 md:text-lg hover:border-2 hover:bg-red-600 hover:border-red-600 p-1 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Location</button>
+            <button class="md:font-normal md:text-lg hover:border-2 p-1 hover:bg-red-600 hover:border-red-600 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Search</button>
+        </div>
+
+        <!-- Menu for responsive -->
+        <div class="  md:hidden text-right mr-2">
+            <p>Menu</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-4 mx-2">
+        <!-- First Part Know more -->
+        <div class="two-part grid grid-cols-2">
+            <!-- About Us -->
+            <div class="content flex flex-col gap-1 items-center justify-center">
+                <h1 class="font-bold uppercase text-lg md:text-2xl lg:text-3xl">The Ultimate Computer Store</h1>
+                <p class="m-1 font-normal text-md md:font-normal md:text-xl lg:text-2xl lg:pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Consequatur ducimus vero eos quae quasi.
+                </p>
+                <button class="font-bold md:text-xl text-md m-1 text-red-500 border-2 border-red-600 rounded-md p-1">Know more</button>
+            </div>
+            <!-- Image -->
+            <img src="./images/top-deal.png" alt="normalimg">
+        </div>
+
+        <!-- 2nd Part Hero Banner -->
+        <div class="new-arrival relative">
+            <!-- hero banner image -->
+            <img class="" src="./images/first.png" alt="">
+            <!-- New Arrival icon -->
+            <!-- <button class="w-16 h-16 rounded-full md:rounded-full absolute top-20 right-10 md:h-20 md:w-20 bg-purple-500">New Arrival</button> -->
+            <button class="w-14 h-14 rounded-full top-14 right-12 text-sm sm:w-14 sm:h-14 sm:rounded-full bg-purple-600 sm:text-sm absolute sm:top-20 sm:right-10 md:w-20 md:h-20 md:text-xl lg:w-20 lg:h-20 lg:rounded-full lg:text-xl lg:top-30 lg:right-32">New Arrival</button>
+        </div>
+    </section>
+
+     <!-- Feature Product -->
+     <section class="feature-product mt-10 mx-2">
+        <!-- Products Heading -->
+        <div class="flex items-center justify-center space-x-2 mb-6">
+            <hr class="border-1 border-black flex-grow ml-1">
+            <h1 class="text-center font-semibold text-lg whitespace-nowrap">Featured Products</h1>
+            <hr class="border-1 border-black flex-grow mr-1">
+        </div>
+        <!-- Display products -->
+        <div id="productContainer" class="product-container grid grid-cols-2 gap-2 mx-2 grid-rows-2 sm:grid sm:grid-cols-4 sm:grid-rows-2 sm:gap-2 sm:mx-2">
+            <div class="products bg-white text-center rounded-md">
+                <img class="" src="./images/mouse.png" alt="">
+                <h1 class="font-bold text-xl sm:font-bold sm:text-xl">Mouse</h1>
+                <p class="font-light truncate-text mb-1 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button class="bg-red-700 text-xs sm:text-md md:text-lg sm:p-1 ml-2 p-1 rounded-md mb-2 font-bold text-white">Read More</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Feature-brands -->
+     <section class="feature-brands mx-2 items-center justify-center mt-10">
+        <!-- Featured Brands Heading -->
+        <div class="flex items-center justify-center space-x-2 mb-6">
+            <hr class="border-1 border-black flex-grow ml-1">
+            <h1 class="text-center font-semibold text-lg whitespace-nowrap">Featured Brands</h1>
+            <hr class="border-1 border-black flex-grow mr-1">
+        </div>
+        
+        <!-- Brands images -->
+        <div id="brands" class="brands mx-1 py-1 shadow-lg md:my-2 bg-gray-200 rounded-md flex justify-evenly gap-3 flex-wrap">
+            <a class="" href="#"><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/acer.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/apple.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/Asus.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/canon.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/dell.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/Hp.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/lenovo.png" alt=""></a>
+            <a href=""><img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white" src="./images/logo/MSi.png" alt=""></a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class=" mt-10 mx-2">
+        <!-- Featured Brands Heading -->
+        <div class="flex items-center justify-center space-x-2 mb-6">
+            <hr class="border-1 border-black flex-grow ml-1">
+            <h1 class="text-center font-semibold text-lg whitespace-nowrap">Blog</h1>
+            <hr class="border-1 border-black flex-grow mr-1">
+        </div>
+
+        <!-- Display Blog Post -->
+        <div id="blogContainer" class=" grid grid-cols-2 md:grid-cols-4 gap-4 m-1">
+            <div class="blogs bg-white shadow-lg rounded-md flex flex-col mb-1">
+                <img class=" rounded-md " src="./images/laptop3.jpg" alt="">
+                <p class="truncate-text  ml-2 text-sm sm:text-md lg:text-xl md:text-lg">Buying new printer? Here's everything you should know.</p>
+                <a class="text-sm font-semibold inline-block ml-2 mb-2 cursor-pointer sm:text-md lg:text-xl md:text-lg hover:border-2  hover:border-blue-600 transition-all duration-75 hover:text-blue-600" href="">Read more</a>
+                <!-- <a class="inline text-sm font-semibold ml-2 mb-2 cursor-pointer sm:text-md lg:text-xl md:text-lg hover:border-b-2 hover:border-blue-600 hover:text-blue-600 transition-all duration-75" href="#">Read more</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- horizontal line above the footer section -->
+    <hr class="border-1 border-black m-1 mt-20">
+
+    <!-- Footer Section -->
+    <footer class=" grid grid-cols-3 gap-1 items-center">  
+        <!-- First Section for Company logo and social links -->
+        <section class=" flex flex-col items-center">
+            <!-- Company -->
+            <div class="flex items-center m-1 gap-1">
+                <img class="w-14 h-14 lg:w-28 lg:h-28 md:w-20 md:h-20 sm:w-16 sm:h-16 rounded-full" src="./images/logoo.png" alt="">
+                <h1 class="font-semibold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Generation Nepal</h1>
+            </div>
+            <!-- social links -->
+            <div class="flex flex-col gap-1 p-1">
+                <h2 class="font-normal text-sm md:text-2xl">Connect with us</h2>
+                <ul class="flex items-center gap-3 md:gap-5">
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-instagram-line text-md font-normal md:text-4xl"></i></a> 
+                        <!-- <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Instagram</a> -->
+                    </li>
+                    <li class="flex gap-2">
+                        <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-facebook-circle-fill text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">FaceBook</a>
+                    </li>
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-twitter-x-line text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Twitter</a>
+                    </li>
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-youtube-fill text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">YouTube</a>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+
+        <!-- Second Section for Enquiries and Feedback -->
+        <section class=" ">
+            <div class="flex flex-col gap-2 items-center mb-1">
+                <h1 class=" font-bold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Enquiry</h1>
+                <!-- <button class="font-light text-xs p-0.5 bg-red-300 w-20 sm:font-normal
+                     sm:text-lg md:font-normal md:text-xl lg:font-normal lg:text-2xl border-2 border-black rounded-md sm:p-1">Feedback/ Query</button> -->
+                <button class="font-normal text-xs bg-red-300 w-20 p-0.5 sm:w-32 md:w-44 lg:w-56 sm:bg-blue-300 sm:font-normal sm:text-md md:font-normal
+                 md:text-xl lg:font-normal lg:text-2xl border-2 border-black rounded-md sm:p-1">Feedback/ Query</button>
+            </div>
+        </section>
+        
+        <!-- Third Section for Newsletter -->
+        <section class=" p-1 mr-2">
+            <div>
+                <h1 class=" font-bold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Newsletter</h1>
+                <h3 class="truncate-text lg:text-xl md:text-lg text-xs">Receive the latest product trends and industry updates directly in your inbox.</h3>
+                <!-- Button and Email -->
+                <div class="flex flex-col gap-2 items-center sm:flex sm:flex-row sm:gap-1">   
+                    <input class="w-full outline-none rounded-md p-1" type="text">
+                    <button class=" text-xs sm:text-sm p-1
+                     md:text-lg lg:text-xl border-0 bg-red-600 border-red-600 rounded-md font-bold">Subscribe</button>
+                </div>     
+            </div>
+        </section>
+    </footer>
+
+    <!-- horizontal line above the footer section -->
+    <hr class="border-1 border-black m-1">
+    <div class="copyright-section">
+        <h1 class="font-light text-sm md:text-sm text-center">&copy; 2024 Generation Nepal. All rights reserved.</h1>
+    </div>
+
+    <script src="./responsive.js"></script>
+</body>
+</html>

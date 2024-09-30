@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color">
+    <!-- Header Section -->
+
+    <header id="header" class=" grid grid-cols-2 md:grid md:grid-cols-4">
+        <!-- Company Logo -->
+        <div class="font-semibold  text-lg m-1 md:font-semibold md:text-xl lg:font-semibold lg:text-2xl">
+            <h1 class="md:p-1">Generation Nepal</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="hidden md:col-span-2 md:flex">
+            <ul class="md:pt-2 md:flex md:gap-1 md:font-normal md:text-lg lg:font-normal lg:gap-3 lg:text-xl">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Peripheral</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Button for location and search -->
+        <div class="hidden md-max-w-xs  md:p-1 md:inline-flex md:justify-end md:m-1 bg-red-300">
+            <button class="md:font-normal md:mr-4 md:text-md hover:border-2 hover:bg-red-600 hover:border-red-600 p-1 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Location</button>
+            <button class="md:font-normal md:text-md hover:border-2 p-1 hover:bg-red-600 hover:border-red-600 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Search</button>
+        </div>
+
+        <!-- Menu for responsive -->
+        <div class="  md:hidden text-right mr-2">
+            <p>Menu</p>
+        </div>
+    </header>
+
+     <!-- Hero Section -->
+
+     <section class="hero-section ">
+        <!-- First Part Know more -->
+        <div class="two-part grid grid-cols-2">
+            <!-- About Us -->
+            <div class="content flex flex-col items-center justify-center">
+                <h1 class=" font-bold uppercase text-lg pt-2 pl-2 md:text-2xl lg:text-3xl">The Ultimate Computer Store</h1>
+                <p class=" pt-1 pl-2 font-normal text-md md:font-semibold md:text-xl lg:text-2xl lg:pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Consequatur ducimus vero eos quae quasi.
+                </p>
+                <button class="font-bold md:text-xl text-md m-1 text-red-500 border-2 border-red-600 rounded-md p-1">Know more</button>
+            </div>
+            <!-- Image -->
+            <img src="./images/top-deal.png" alt="normalimg">
+        </div>
+
+        <!-- 2nd Part Hero Banner -->
+
+        <div class="new-arrival relative">
+            <!-- hero banner image -->
+            <img class="" src="./images/first.png" alt="">
+
+            <!-- New Arrival icon -->
+            <!-- <button class="w-16 h-16 rounded-full md:rounded-full absolute top-20 right-10 md:h-20 md:w-20 bg-purple-500">New Arrival</button> -->
+            <button class="w-14 h-14 rounded-full top-14 right-12 text-sm sm:w-14 sm:h-14 sm:rounded-full bg-purple-600 sm:text-sm absolute sm:top-20 sm:right-10 md:w-20 md:h-20 md:text-xl lg:w-20 lg:h-20 lg:rounded-full lg:text-xl lg:top-30 lg:right-32">New Arrival</button>
+        </div>
+    </section>
+
+
+    <!-- Footer-Section -->
+    <hr class="border-1 border-black my-2">
+    <footer class="grid grid-cols-4 items-center">
+       
+        <div class="company-footer col-span-2 flex flex-col justify-center">
+            <div class="flex items-center">
+                <img class="w-12 h-12 rounded-full" src="./images/logoo.png" alt="">
+                <h1>Generation Nepal</h1>
+            </div>
+        
+        <section class="section-third flex flex-col gap-1 ml-2">
+            <h3>Connect with us</h3>
+            <ul class="flex gap-3">
+                <li class="flex gap-2">
+                    <i class="ri-instagram-line"></i>
+                    <a class="hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Instagram</a>
+                </li>
+                <li class="flex gap-2">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <a class="hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">FaceBook</a>
+                </li>
+                <li class="flex gap-2">
+                    <i class="ri-twitter-x-line"></i>
+                    <a class="hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Twitter</a>
+                </li>
+                <li class="flex gap-2">
+                    <i class="ri-youtube-fill"></i>
+                    <a class="hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">YouTube</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+        <section class="enquiry">
+            <h1 class="font-bold text-2xl">Enquiry</h1>
+            <button class=" border-2 w-48 rounded-md p-1 border-black text-lg font-light">Feedback/Queries</button>
+        </section>
+         <!-- Newsletter part -->
+    <div class="subscribe flex flex-col items-center pt-4 h-48 gap-4">
+        <h2 class="font-bold">
+            STAY UP TO DATE ON EVERYTHING GENERATION NEPAL 
+        </h2>
+        <div class=" flex items-center gap-2 bg-white text-black border-2 border-black rounded-md">
+            <input class=" outline-none border-none p-1" type="email" name="email" id="email" placeholder="Email">
+            <button class="h-full rounded-sm border-2 border-red-600 bg-red-600">SUBSCRIBE</button>
+        </div>
+    </div>
+    
+    </footer>
+    <hr class="border-1 border-black mb-2">
+    <div class="copyright-section">
+        <h1 class="font-light text-xl text-center">&copy; 2024 Generation Nepal. All rights reserved.</h1>
+    </div>
+</body>
+</html>

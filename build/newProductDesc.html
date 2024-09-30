@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color">
+    <!-- Header Section -->
+
+    <header id="header" class=" bg-gray-300 p-2 grid grid-cols-2 md:grid md:grid-cols-4">
+        <!-- Company Logo -->
+        <div class="font-semibold text-lg m-1 md:font-semibold md:text-xl lg:font-semibold lg:text-2xl">
+            <h1 class="md:p-1 md:text-center">Generation Nepal</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="hidden md:col-span-2 md:flex">
+            <ul class="md:pt-2 md:flex md:gap-1 md:font-normal md:text-lg lg:font-normal lg:gap-3 lg:text-2xl">
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Home</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Desktop</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Laptop</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Accessories</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Peripheral</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Blog</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Button for location and search -->
+        <div class="hidden md-max-w-xs  md:flex md:items-center lg:justify-start md:mx-6">
+            <button class="md:font-normal md:mr-2 md:ml-2 md:text-lg hover:border-2 hover:bg-red-600 hover:border-red-600 p-1 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Location</button>
+            <button class="md:font-normal md:text-lg hover:border-2 p-1 hover:bg-red-600 hover:border-red-600 transition-all duration-75 md:text-black lg:font-normal lg:text-2xl rounded-md">Search</button>
+        </div>
+
+        <!-- Menu for responsive -->
+        <div class="  md:hidden text-right mr-2">
+            <p>Menu</p>
+        </div>
+    </header>
+
+    <!-- Product Description -->
+
+    <section class="grid grid-cols-5 gap-2 mr-2 my-3">
+
+        <!-- Display product sideview image -->
+        <div class=" col-span-1 ml-1 sm:px-0 md:px-3 lg:px-10">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-24 bg-white m-1 mt-3 mb-4">
+                <img class="h-20 sm:w-28 sm:h-24" src="./images/key.png" alt="">
+            </div>
+            <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-24 bg-white m-1 mt-3 mb-4">
+                <img class="h-20 sm:w-28 sm:h-24" src="./images/key.png" alt="">
+            </div>
+            <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-24 bg-white m-1 mt-3 mb-4">
+                <img class="h-20 sm:w-28 sm:h-24" src="./images/key.png" alt="">
+            </div>
+        </div>
+
+        <!-- Displaying the main image -->
+
+        <div class="col-span-2 bg-white mt-3 p-2 shadow-2xl">
+            <div class="w-full h-full shadow-lg">
+                <img class="w-full h-full shadow-2xl" src="./images/laptop1.jpg" alt="">
+
+            </div>
+            
+        </div>
+         <!-- Product Details (50%) -->
+         <div class="col-span-2 p-2 rounded-lg">
+            <h2 class="text-md sm:text-lg mb-1 md:text-2xl font-bold">
+                Dell Vostro 3510 i5 11th Gen / 8GB RAM / 256GB SSD / 15.6" FHD Display
+            </h2>
+            <p class="text-blue-600 text-md sm:text-lg md:text-xl font-semibold mb-2">Price: 70,000</p>
+            
+            <h3 class=" text-md sm:text-lg md:text-xl font-semibold mb-2">Key Features</h3>
+            <ul class="list-disc list-inside pl-2 space-y-2 text-sm text-left whitespace-nowrap sm:text-lg md:text-xl">
+                <li>Model: Dell Vostro 3510</li>
+                <li>Processor: Intel i5 11th Gen</li>
+                <li>RAM: 8GB</li>
+                <li>Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <!-- Other Products -->
+    <section>
+        <!-- Other Products Heading -->
+        <div class="flex items-center w-full justify-center space-x-2 mt-6 mb-6">
+            <hr class="border-1 border-black flex-grow ml-1">
+            <h1 class="text-center font-semibold text-md md:text-lg whitespace-nowrap">Other Products</h1>
+            <hr class="border-1 border-black flex-grow mr-1">
+        </div>
+
+        <!-- Images -->
+        <div id="laptopDisplay" class=" grid grid-cols-2 md:grid-cols-4 shadow-lg gap-2 mx-3">
+            <div class="flex flex-col items-center ml-1 bg-white h-auto rounded-md">
+                <img class="" src="./images/storage.jpg" alt="">
+                <p class="truncate-text font-normal text-sm md:text:md lg:text-lg ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quam?</p>
+                <p class="text-red text-xs font-semibold lg:text-lg md:text-lg sm:text-md mt-1">Price: Rs 80,000</p>
+                <button class="bg-red-700 text-xs sm:text-md md:text-lg mb-2 sm:p-1 ml-2 p-1 rounded-md mt-2 font-bold text-white">Read More</button>
+                <!-- <button class="bg-red-600 mb-1 p-1 rounded-md">Read more</button> -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- horizontal line above the footer section -->
+    <hr class="border-1 border-black m-1 mt-20">
+
+    <!-- Footer Section -->
+    <footer class=" grid grid-cols-3 gap-1 items-center">  
+        <!-- First Section for Company logo and social links -->
+        <section class=" flex flex-col items-center">
+            <!-- Company -->
+            <div class="flex items-center m-1 gap-1">
+                <img class="w-14 h-14 lg:w-28 lg:h-28 md:w-20 md:h-20 sm:w-16 sm:h-16 rounded-full" src="./images/logoo.png" alt="">
+                <h1 class="font-semibold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Generation Nepal</h1>
+            </div>
+            <!-- social links -->
+            <div class="flex flex-col gap-1 p-1">
+                <h2 class="font-normal text-sm md:text-2xl">Connect with us</h2>
+                <ul class="flex items-center gap-3 md:gap-5">
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-instagram-line text-md font-normal md:text-4xl"></i></a> 
+                        <!-- <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Instagram</a> -->
+                    </li>
+                    <li class="flex gap-2">
+                        <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-facebook-circle-fill text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">FaceBook</a>
+                    </li>
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-twitter-x-line text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">Twitter</a>
+                    </li>
+                    <li class="flex gap-2">
+                       <a class=" hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href=""><i class="ri-youtube-fill text-md font-normal md:text-4xl"></i></a> 
+                        <a class="hidden hover:text-blue-500 hover:transition-all duration-100 ease-in hover:shadow-lg hover:border-b-2 hover:border-blue-500" href="">YouTube</a>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+
+        <!-- Second Section for Enquiries and Feedback -->
+        <section class=" ">
+            <div class="flex flex-col gap-2 items-center mb-1">
+                <h1 class=" font-bold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Enquiry</h1>
+                <!-- <button class="font-light text-xs p-0.5 bg-red-300 w-20 sm:font-normal
+                     sm:text-lg md:font-normal md:text-xl lg:font-normal lg:text-2xl border-2 border-black rounded-md sm:p-1">Feedback/ Query</button> -->
+                <button class="font-normal text-xs bg-red-300 w-20 p-0.5 sm:w-32 md:w-44 lg:w-56 sm:bg-blue-300 sm:font-normal sm:text-md md:font-normal
+                 md:text-xl lg:font-normal lg:text-2xl border-2 border-black rounded-md sm:p-1">Feedback/ Query</button>
+            </div>
+        </section>
+        
+        <!-- Third Section for Newsletter -->
+        <section class=" p-1 mr-2">
+            <div>
+                <h1 class=" font-bold text-xs uppercase lg:font-bold lg:text-2xl md:font-semibold md:text-xl sm:font-bold sm:text-xl">Newsletter</h1>
+                <h3 class="truncate-text lg:text-xl md:text-lg text-xs">Receive the latest product trends and industry updates directly in your inbox.</h3>
+                <!-- Button and Email -->
+                <div class="flex flex-col gap-2 items-center sm:flex sm:flex-row sm:gap-1">   
+                    <input class="w-full outline-none rounded-md p-1" type="text">
+                    <button class=" text-xs sm:text-sm p-1
+                     md:text-lg lg:text-xl border-0 bg-red-600 border-red-600 rounded-md font-bold">Subscribe</button>
+                </div>     
+            </div>
+        </section>
+    </footer>
+
+    <!-- horizontal line above the footer section -->
+    <hr class="border-1 border-black m-1">
+    <div class="copyright-section">
+        <h1 class="font-light text-sm md:text-sm text-center">&copy; 2024 Generation Nepal. All rights reserved.</h1>
+    </div>
+
+    <script src="./laptopPage.js"></script>
+</body>
+</html>

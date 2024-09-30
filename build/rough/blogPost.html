@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color m-0 box-border p-0">
+    <header id="header" class="grid grid-cols-4 p-4 bg-gray-400 shadow-md">
+        <div id="company" class="">
+            <h1 class="font-bold text-2xl p-1 ">Generations Nepal</h1>
+        </div>
+        <nav class=" col-span-2">
+            <ul class="flex font-bold text-xl gap-7 m-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li class="dropdown hidden">
+                    <a href="#" class="dropBtn">
+                        <div class="dropdown-content">
+                            <a href="#">PC1</a>
+                            <a href="#">PC2</a>
+                            <a href="#">PC3</a>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Peripheral</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="location-search flex justify-around">
+            <button class=" font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Location</button>
+            <button class="font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Search</button>
+        </div>
+    </header>
+    <!-- Detailed Blog -->
+    <section class=" my-3 ml-3 mr-2">
+        <div class="flex flex-col ml-1">
+            <div class="w-full max-w-md px-4">
+                <h1 class="font-bold text-2xl mb-1 mt-1">Buying a New Printer: Everything You Should Know</h1>
+            </div>
+            
+            <div class="flex gap-2 items-center">
+                <div class="w-14 h-14 bg-white rounded-full">
+                    <img class="w-14 rounded-full h-14" src="./images/mouse.png" alt="">
+                </div>
+                <div class="flex flex-col gap-0 items-center">
+                    <p class="font-semibold text-lg">Author</p>
+                    <p class="font-light text-lg">April 1, 1997</p>
+                    <div class="flex gap-2">
+                        <p id="heart-icon" ><i class=" ri-heart-line text-xl bg-blue-600"></i></p>
+                        <p><i class="ri-chat-1-line text-xl"></i></p>
+                        <p><i class="ri-share-forward-line text-xl"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2">
+                <img src="./images/desktop.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class=" grid grid-cols-3">
+            <div class="my-4 col-span-2 items-center justify-center gap-2">
+                <p class="ml-2 text-justify pr-4">
+                    When it comes to the specifications, the Acer Aspire 5 2021 closely resembles the aforementioned HP Notebook 15 EQ2115AU. It too has got AMD Ryzen 5 5500U processor and 8GB of DDR4 RAM on its system. But unlike the HP Notebook, the laptop RAM on this device can be expanded up to 32GB. And that ensures a fair bit of futureproofing.
+
+
+
+                    The storage side is taken care of by a 256GB Solid State Drive (SSD) but you can expand it on your need by tossing in an HDD. And the good thing is Acer has allocated a dedicated slot for it.
+                    
+                    
+                    
+                    As far as the display is concerned, you get a 15.6-inch display with an IPS panel. The screen features Full-HD resolution and is sufficiently bright with 250 nits of brightness. And talking about the keyboard, there is a Full-sized chiclet keyboard with keyboard backlighting as well.
+                    
+                    
+                    
+                    But the most impressive of all has to be its battery. Acer has included a sizable battery on this device, which can back up you for a whopping 10 hours. So if you are a student or an office employee, you may consider this one since it avoids the need to carry your bulky power adapters and chargers.    
+                </p>
+            </div>
+            <div>
+                    <div class=" my-4 ml-10 flex flex-col gap-5 justify-center">
+                        <div class="flex items-center w-full my-4">
+                            <hr class="border-1 w-1/2 border-black my-2">
+                            <h1 class="font-bold text-xl  w-1/2 text-center">Read More</h1>
+                            <hr class="border-1 w-1/2 border-black my-2">
+                        </div>
+                        <div class="flex flex-col mr-2 items-start bg-white">
+                            <img class="w-full" src="./images/budget_laptop.png" alt="">
+                            <p class="m-1  ml-1 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ipsum?</p>
+                            <button class="bg-red-600 rounded-md p-1 m-1 text-white">Read More</button>
+                        </div>
+                        <div class="flex flex-col mr-2 items-start bg-white rounded-md">
+                            <img class="w-full" src="./images/budget_laptop.png" alt="">
+                            <p class="m-1  ml-1 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ipsum?</p>
+                            <button class=" bg-red-600 rounded-md p-1 m-1 text-white">Read More</button>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>

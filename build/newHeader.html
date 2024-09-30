@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color m-0">
+    <!-- Header Section -->
+    <header class="grid grid-cols-2 bg-gray-600">
+        <div class="mt-2 col-span-1 bg-red-300">
+            <h1 class="font-semibold text-2xl m-2 text-white">Generation Nepal</h1>
+        </div>
+        <div class=" col-span-1">
+            <div class="flex items-center justify-center space-x-4 mt-2 text-white m-2">
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">Need help?</p>
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">01-1234567</p>
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">|</p>
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">9841567891</p>
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">|</p>
+                <p class="text-xs lg:text-xl md:text-lg sm:text-base">Contact us</p>
+                <a href=""><i class="ri-map-pin-line text-xl"></i></a>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Navigation Bar -->
+    <div>
+        <nav id="navlist" class="hidden md:col-span-2 justify-center md:flex">
+            <ul class="md:pt-2 flex flex-col md:flex-row items-center gap-3 md:font-normal md:text-lg lg:font-normal lg:gap-3 lg:text-2xl">
+                <li>
+                    <a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Home</a>
+                </li>
+                <li id="toggleId">
+                    <a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Desktop <i class="ri-arrow-drop-down-fill"></i></a>
+                    <ul id="hideMenu" class="text-center hidden md:absolute">
+                        <li><a href="">Acer</a></li>
+                        <li><a href="">Dell</a></li>
+                        <li><a href="">HP</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Laptop</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Accessories</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Peripheral</a></li>
+                <li><a class="border-b-2 border-transparent hover:shadow-md hover:border-blue-700 transition-all duration-75" href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <!-- Menu for responsive -->
+    <div class="md:hidden text-right mr-2">
+        <i id="menu" class="ri-menu-line" onclick="onToggleMenu(event)"></i>
+    </div>
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden absolute top-16 right-0 w-full bg-gray-700 text-white hidden">
+        <ul class="flex flex-col gap-2 p-4">
+            <li><a class="block px-4 py-2 hover:bg-gray-600" href="#">Home</a></li>
+            <li class="relative group">
+                <a class="block px-4 py-2 hover:bg-gray-600" href="#">Desktop <i class="ri-arrow-drop-down-fill"></i></a>
+                <ul class="absolute left-0 mt-2 hidden bg-white text-black group-hover:block">
+                    <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Acer</a></li>
+                    <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">Dell</a></li>
+                    <li><a class="block px-4 py-2 hover:bg-gray-200" href="#">HP</a></li>
+                </ul>
+            </li>
+            <li><a class="block px-4 py-2 hover:bg-gray-600" href="#">Laptop</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-600" href="#">Accessories</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-600" href="#">Peripheral</a></li>
+            <li><a class="block px-4 py-2 hover:bg-gray-600" href="#">Blog</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+   
+
+    
+    <script>
+
+        function onToggleMenu(e){
+    
+            let menu = document.querySelector('#menu');
+
+            if(menu.classList.contains('ri-menu-line')){
+                menu.classList.remove('ri-menu-line');
+                menu.classList.add('ri-close-line')
+            }
+        else{
+            menu.classList.add('ri-menu-line');
+            menu.classList.remove('ri-close-line');
+
+        }
+        
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            // Use querySelector if there's only one toggle element, otherwise use querySelectorAll and loop
+            const toggle = document.querySelector('#toggleId');
+            const hideMenu = document.querySelector('#hideMenu');
+
+            // const menu = document.querySelector('#menu');
+            const nav = document.querySelector('#navlist')
+            menu.addEventListener('click',(e)=>{
+                nav.classList.toggle('hidden');
+               
+            })
+            toggle.addEventListener('click', (e) => {
+                // Toggle the 'hidden' class on the hideMenu element
+                hideMenu.classList.toggle('hidden');
+               // hideMenu.className = " flex flex-col items-center";
+            });
+        });
+    </script>
+</body>
+</html>

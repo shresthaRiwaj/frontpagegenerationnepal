@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body class="bg-color">
+    <header id="header" class="grid grid-cols-4">
+        <div id="company" class="bg-red-500">
+            <h1 class="font-bold text-2xl p-1">Generation Nepal</h1>
+        </div>
+        <nav class="bg-blue-400 col-span-2">
+            <ul class="flex font-bold text-xl gap-7 m-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li class="dropdown hidden">
+                    <a href="#" class="dropBtn">
+                        <div class="dropdown-content">
+                            <a href="#">PC1</a>
+                        <a href="#">PC2</a>
+                        <a href="#">PC3</a>
+                        </div>
+                        
+                    </a>
+                </li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Peripheral</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="location-search bg-red-400 flex justify-around">
+            <button class=" font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Location</button>
+            <button class="font-normal text-xl m-1 bg-red-500 rounded-md p-1 text-white">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="message bg-red-600 w-full">
+            <h1 class=" uppercase border-2 text-center font-bold">Very Very Important Message Here*</h1>
+        </section>
+    </main>
+
+    <!-- Hero Section -->
+
+    
+
+    <section class="hero-section bg-blue-300">
+        <div class="two-part bg-red-400 grid grid-cols-2">
+            <div class="content flex flex-col items-center justify-center">
+                <h1 class=" font-bold uppercase text-2xl">The Ultimate Computer Store</h1>
+                <p class=" p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Consequatur ducimus vero eos quae quasi.
+                </p>
+                <button class="font-normal text-xl m-1 text-red-500 border-2 border-red-600 rounded-md p-1">Know more</button>
+            </div>
+            <img src="./images/top-deal.png" alt="normalimg">
+        </div>
+        <div class="new-arrival relative bg-red-700">
+            <img class="" src="./images/first.png" alt="">
+            <button class="rounded-full absolute top-20 right-10 h-20 w-20 bg-purple-500">New Arrival</button>
+        </div>
+        
+    </section>
+
+
+    <!-- Feature Product -->
+    <section class="feature-product">
+        <div class="grid grid-cols-3 items-center justify-center">
+            <hr class="border-1 border-black mr-1">
+            <h1 class="text-center">Featured Products</h1>
+            <hr class="border-1 border-black mr-1">
+        </div>
+        <!-- Display products -->
+        <div id="productContainer" class="product-container grid grid-cols-4 grid-rows-2 gap-2 ">
+            <div class="products bg-white text-center">
+                <img src="./images/mouse.png" alt="">
+                <h1 class="font-bold text-lg">Mouse</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button class="bg-red-500 p-1 rounded-md mb-1 text-white">Read More</button>
+            </div>
+            <div class="products bg-white text-center">
+                <img class="" src="./images/mouse.png" alt="">
+                <h1>Mouse</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button>Read More</button>
+            </div>
+            <div class="products bg-white">
+                <img src="./images/mouse.png" alt="">
+                <h1>Mouse</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button>Read More</button>
+            </div>
+            <div class="products bg-white">
+                <img src="./images/mouse.png" alt="">
+                <h1>Mouse</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button>Read More</button>
+            </div>
+            <div class="products bg-white">
+                <img src="./images/mouse.png" alt="">
+                <h1>Mouse</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature-brands -->
+
+    <section class="feature-brands">
+        <div class="grid grid-cols-3 items-center justify-center">
+            <hr class="border-1 border-black mr-1">
+            <h1 class="text-center">Featured Products</h1>
+            <hr class="border-1 border-black mr-1">
+        </div>
+        <div id="brands" class="brands w-11/12 bg-white ml-4 flex gap-3 flex-wrap hover:bg-black transition-shadow duration-300 hover:drop-shadow-2xl">
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+            <a href=""><img class="w-20 my-1 mx-1 h-20 rounded-full bg-white" src="./images/key.png" alt=""></a>
+        </div>
+    </section>
+
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
